@@ -6,63 +6,135 @@
 
     <link rel="stylesheet" href="../assets/styles/normalize.css">
 
-<!--    <style>-->
-<!--        main{-->
-<!--            height: 100%;-->
-<!--            width: 100%;-->
-<!--            background: gainsboro;-->
-<!--            position: absolute;-->
-<!--            top: 0;-->
-<!--            bottom: 0;-->
-<!--            left: 0;-->
-<!--            right: 0;-->
-<!--            margin: auto;-->
-<!--            overflow: hidden;-->
-<!--        }-->
+    <style>
+        main{
+            height: 100%;
+            width: 100%;
+            background: gainsboro;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: hidden;
+        }
 
-<!--        /*sky*/-->
-<!--        main>section>div:first-child{-->
-<!--            width: 100%;-->
-<!--            height: 65vh;-->
-<!--            background: url("../assets/images/case-06-images/sky.jpg");-->
-<!--        }-->
+        /*sky*/
+        main>section>div:first-child{
+            width: 100%;
+            height: 65vh;
+            background: url("../assets/images/case-06-images/sky.jpg");
+        }
 
-<!--        /*left side city*/-->
-<!--        main>section>div:first-child>div:first-child{-->
-<!--            width: 50%;-->
-<!--            height: 40vh;-->
-<!--            background: url("../assets/images/case-06-images/city.png");-->
+        /*left side city*/
+        main>section>div:first-child>div:first-child{
+            width: 50%;
+            height: 40vh;
+            background: url("../assets/images/case-06-images/city.png");
 
-<!--            position: absolute;-->
-<!--            top: 0;-->
-<!--            bottom: 60px;-->
-<!--            left: 0;-->
-<!--            /*right: 0;*/-->
-<!--            margin: auto;-->
-<!--        }-->
-<!--        -->
-<!--        /*right side city*/-->
-<!--        main>section>div:first-child>div:nth-child(2){-->
-<!--            width: 50%;-->
-<!--            height: 40vh;-->
-<!--            background: url("../assets/images/case-06-images/city.png");-->
+            position: absolute;
+            top: 0;
+            bottom: 60px;
+            left: 0;
+            /*right: 0;*/
+            margin: auto;
+        }
 
-<!--            position: absolute;-->
-<!--            top: 0;-->
-<!--            bottom: 60px;-->
-<!--            /*left: 0;*/-->
-<!--            right: 0;-->
-<!--            margin: auto;-->
-<!--        }-->
+        /*right side city*/
+        main>section>div:first-child>div:nth-child(2){
+            width: 50%;
+            height: 40vh;
+            background: url("../assets/images/case-06-images/city.png");
 
-<!--        /*road*/-->
-<!--        main>section>div:nth-child(2){-->
-<!--            width: 100%;-->
-<!--            height: 35vh;-->
-<!--            background: url("../assets/images/case-06-images/road.jpg");-->
-<!--        }-->
+            position: absolute;
+            top: 0;
+            bottom: 60px;
+            /*left: 0;*/
+            right: 0;
+            margin: auto;
+        }
 
-<!--    </style>-->
+        /*road*/
+        main>section>div:nth-child(2){
+            width: 100%;
+            height: 35vh;
+            background: url("../assets/images/case-06-images/road.jpg");
+        }
+
+        /*car*/
+        main>section>div:nth-child(2)>div:first-child{
+            width: 50%;
+            height: 30vh;
+            /*background: url("../assets/images/case-06-images/car.png");*/
+
+            position: absolute;
+            top: 250px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        /*left wheel*/
+        main>section>div:nth-child(2)>div:nth-child(2){
+            width: 50%;
+            height: 30vh;
+
+            position: absolute;
+            top: 410px;
+            bottom: 0;
+            left: 60px;
+            right: 0;
+            margin: auto;
+        }
+
+        /*right wheel*/
+        main>section>div:nth-child(2)>div:nth-child(3){
+            width: 50%;
+            height: 30vh;
+
+            position: absolute;
+            top: 410px;
+            bottom: 0;
+            left: 490px;
+            right:0;
+            margin: auto;
+        }
+
+        /*main>section>div:first-child{*/
+        /*    width: fit-content;*/
+        /*    display: flex;*/
+        /*    animation: myAnimation 5s;*/
+        /*    animation-name: my-animation;*/
+        /*    animation-iteration-count: infinite;*/
+        /*    animation-timing-function: linear;*/
+        /*    animation-direction: alternate;*/
+        /*    animation-play-state: running;*/
+
+        /*}*/
+
+        @keyframes my-animation {
+            0%{
+                transform: translateX(0%);
+
+            }
+
+            25%{
+                transform: translateX(-25%);
+
+            }
+            50%{
+                transform: translateX(-50%);
+
+            }
+            75%{
+                transform: translateX(-75%);
+
+            }
+        }
+
+    </style>
 
 </head>
 <body>
@@ -81,11 +153,17 @@
 <!--            road-->
             <div>
 <!--                car-->
-                <div></div>
+                <div>
+                    <input type="image" src="../assets/images/case-06-images/car.png" width="350px" height="150px">
+                </div>
 <!--                left wheel-->
-                <div></div>
+                <div>
+                    <input type="image" src="../assets/images/case-06-images/wheel.png" height="63px" width="63px">
+                </div>
 <!--                right wheel-->
-                <div></div>
+                <div>
+                    <input type="image" src="../assets/images/case-06-images/wheel.png" height="63px" width="63px">
+                </div>
             </div>
         </section>
 
