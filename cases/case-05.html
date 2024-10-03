@@ -5,15 +5,95 @@
     <title>Case 05</title>
 
   <link rel="stylesheet" href="../assets/styles/normalize.css">
+
+  <style>
+
+    main{
+      height: 50vh;
+      width: 50vw;
+      border: 6px solid firebrick;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    section{
+      width: fit-content;
+      display: flex;
+      animation: myAnimation 5s;
+      animation-name: my-animation;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-direction: alternate;
+      animation-play-state: running;
+
+    }
+
+    section>div{
+      height: 50vh;
+      width: 50vw;
+
+    }
+
+    section .img01{
+      background: url("../assets/images/animation_slide/slide1.jpeg");
+      background-size: cover;
+      background-position: center;
+
+    }
+    section .img02{
+      background: url("../assets/images/animation_slide/slide2.jpeg");
+      background-size: cover;
+      background-position: center;
+
+    }
+    section .img03{
+      background: url("../assets/images/animation_slide/slide3.jpeg");
+      background-size: cover;
+      background-position: center;
+
+    }
+    section .img04{
+      background: url("../assets/images/animation_slide/slide4.jpeg");
+      background-size: cover;
+      background-position: center;
+
+    }
+
+    @keyframes my-animation {
+      0%{
+        transform: translateX(0%);
+
+      }
+
+      25%{
+        transform: translateX(-25%);
+
+      }
+      50%{
+        transform: translateX(-50%);
+
+      }
+      75%{
+        transform: translateX(-75%);
+
+      }
+    }
+  </style>
+
 </head>
 <body>
 
   <main>
     <section>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="img01"></div>
+      <div class="img02"></div>
+      <div class="img03"></div>
+      <div class="img04"></div>
     </section>
   </main>
 
